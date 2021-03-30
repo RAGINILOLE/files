@@ -1,0 +1,15 @@
+version: '2'
+services:
+   my_sql_1:
+       build: .
+       ports:
+          - "6301:3306"
+   my_sql_2:
+      build: .
+      ports:
+         - "6311:3306"
+
+   my_sql_3:
+      build: .
+      ports:
+        -  "6321:3306"
